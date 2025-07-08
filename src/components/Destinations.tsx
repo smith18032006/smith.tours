@@ -2,41 +2,52 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { MapPin, Clock, Camera, Star } from "lucide-react";
-import kolhapurPalace from "@/assets/kolhapur-palace.jpg";
-import historicalFort from "@/assets/historical-fort.jpg";
-import scenicLake from "@/assets/scenic-lake.jpg";
+import newPalace from "@/assets/new-palace.jpg";
+import jyotibaTemple from "@/assets/jyotiba-temple.jpg";
+import kopeshwarTemple from "@/assets/kopeshwar-temple.jpg";
+import ganpatipule from "@/assets/ganpatipule.jpg";
 
 const Destinations = () => {
   const destinations = [
     {
-      name: "Mahalaxmi Temple",
-      image: kolhapurPalace,
-      distance: "5 km",
-      duration: "15 mins",
+      name: "New Palace",
+      image: newPalace,
+      distance: "12 km from airport",
+      duration: "25 mins",
+      rating: "4.7",
+      description: "Built in 1884, the New Palace is a stunning example of Indo-Saracenic architecture. Now a museum showcasing royal artifacts and Kolhapur's rich history.",
+      highlights: ["Royal Architecture", "Museum", "Historical Artifacts"],
+      bestTime: "Morning hours"
+    },
+    {
+      name: "Jyotiba Temple",
+      image: jyotibaTemple,
+      distance: "35 km from airport",
+      duration: "1 hour",
       rating: "4.8",
-      description: "One of the most revered temples in Maharashtra, dedicated to Goddess Mahalaxmi. Famous for its beautiful architecture and spiritual significance.",
-      highlights: ["Ancient Architecture", "Religious Significance", "Cultural Heritage"],
+      description: "One of the most revered temples in Maharashtra, dedicated to Lord Jyotiba. Located on a hilltop, offering spectacular views and spiritual peace.",
+      highlights: ["Hilltop Temple", "Spiritual Significance", "Panoramic Views"],
       bestTime: "Early morning or evening"
     },
     {
-      name: "Panhala Fort",
-      image: historicalFort,
-      distance: "20 km",
-      duration: "45 mins",
+      name: "Kopeshwar Temple",
+      image: kopeshwarTemple,
+      distance: "65 km from airport",
+      duration: "1.5 hours",
       rating: "4.6",
-      description: "Historic hill fort known for its strategic importance and stunning views. A perfect blend of history and natural beauty.",
-      highlights: ["Historical Fort", "Scenic Views", "Trekking"],
+      description: "Ancient 12th-century temple known for its exquisite stone carvings and unique architecture. A masterpiece of Chalukyan and Rashtrakuta styles.",
+      highlights: ["Ancient Architecture", "Stone Carvings", "Historical Heritage"],
       bestTime: "October to March"
     },
     {
-      name: "Rankala Lake",
-      image: scenicLake,
-      distance: "8 km",
-      duration: "20 mins",
-      rating: "4.4",
-      description: "Beautiful artificial lake perfect for evening walks and boating. A popular spot for families and nature lovers.",
-      highlights: ["Boating", "Evening Walks", "Peaceful Environment"],
-      bestTime: "Evening hours"
+      name: "Ganpatipule",
+      image: ganpatipule,
+      distance: "95 km from airport",
+      duration: "2 hours",
+      rating: "4.9",
+      description: "Famous beach destination with pristine coastline and the revered Ganpati temple. Perfect blend of spirituality and natural beauty by the Arabian Sea.",
+      highlights: ["Beach Resort", "Ganpati Temple", "Coastal Beauty"],
+      bestTime: "October to March"
     }
   ];
 
