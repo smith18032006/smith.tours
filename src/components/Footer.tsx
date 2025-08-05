@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Phone, Mail, MapPin, Clock, Facebook, Twitter, Instagram, Youtube } from "lucide-react";
+import logo from "@/assets/Smith-logo.png";
 
 const Footer = () => {
   const quickLinks = [
@@ -29,8 +30,12 @@ const Footer = () => {
             {/* Company Info */}
             <div className="lg:col-span-1">
               <div className="flex items-center space-x-3 mb-6">
-                <div className="w-12 h-12 bg-accent-gradient rounded-lg flex items-center justify-center">
-                  <span className="text-primary-foreground font-bold text-xl">S</span>
+                <div className="w-12 h-12 overflow-hidden rounded-lg">
+                  <img 
+                    src={logo} 
+                    alt="Smith Tours Logo" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold">Smith Tours</h3>
@@ -48,7 +53,7 @@ const Footer = () => {
                 </div>
                 <div className="flex items-center text-sm">
                   <Mail className="w-4 h-4 mr-2 text-primary" />
-                  <span>info@smithtours.com</span>
+                  <span>smithtours.kop@gmail.com</span>
                 </div>
                 <div className="flex items-start text-sm">
                   <MapPin className="w-4 h-4 mr-2 text-primary mt-1 flex-shrink-0" />
@@ -143,8 +148,10 @@ const Footer = () => {
                   <Button size="sm" variant="ghost" className="w-8 h-8 p-0">
                     <Facebook className="w-4 h-4" />
                   </Button>
-                  <Button size="sm" variant="ghost" className="w-8 h-8 p-0">
-                    <Instagram className="w-4 h-4" />
+                  <Button size="sm" variant="ghost" className="w-8 h-8 p-0" asChild>
+                    <a href="https://www.instagram.com/smithtours.kolhapur?utm_source=qr&igsh=MWV0dWgzdjk0ZGoyMQ==" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
+                      <Instagram className="w-4 h-4" />
+                    </a>
                   </Button>
                   <Button size="sm" variant="ghost" className="w-8 h-8 p-0">
                     <Twitter className="w-4 h-4" />
@@ -154,6 +161,13 @@ const Footer = () => {
                   </Button>
                 </div>
               </div>
+            </div>
+            
+            {/* Pricing Disclaimer */}
+            <div className="mt-4 pt-4 border-t border-border/20">
+              <p className="text-xs text-muted-foreground text-center">
+                Disclaimer: All prices displayed on this website are indicative and may vary based on seasonal demand, fuel prices, distance, time of travel, and specific requirements. Final pricing will be confirmed at the time of booking.
+              </p>
             </div>
           </div>
         </div>

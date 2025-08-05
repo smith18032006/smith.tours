@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, Mail } from "lucide-react";
+import logo from "@/assets/Smith-logo.png";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,6 +11,7 @@ const Navbar = () => {
     { href: "#about", label: "About" },
     { href: "#fleet", label: "Our Cars" },
     { href: "#destinations", label: "Places to Visit" },
+    { href: "#customer-reviews", label: "Reviews" },
     { href: "#contact", label: "Contact" },
   ];
 
@@ -19,8 +21,8 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-accent-gradient rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xl">S</span>
+            <div className="w-12 h-12 rounded-lg overflow-hidden">
+              <img src={logo} alt="Logo" className="w-full h-full object-cover" />
             </div>
             <div>
               <h1 className="text-xl font-bold text-foreground">Smith Tours</h1>
@@ -45,9 +47,13 @@ const Navbar = () => {
           <div className="hidden lg:flex items-center space-x-4">
             <div className="flex items-center space-x-2 text-sm text-muted-foreground">
               <Phone className="w-4 h-4" />
-              <span>+91 9876543210</span>
+              <span>+91 8888831115</span>
             </div>
-            <Button variant="default" size="sm">
+            <Button 
+              variant="default" 
+              size="sm"
+              onClick={() => window.location.href = 'tel:+918888831115'}
+            >
               Book Now
             </Button>
           </div>
@@ -67,8 +73,8 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t">
-            <div className="flex flex-col space-y-4">
+          <div className="md:hidden py-4 border-t bg-background/95 backdrop-blur-sm">
+            <div className="flex flex-col space-y-4 px-2">
               {navLinks.map((link) => (
                 <a
                   key={link.href}
@@ -82,13 +88,18 @@ const Navbar = () => {
               <div className="flex flex-col space-y-2 pt-4 border-t">
                 <div className="flex items-center space-x-2 text-sm text-muted-foreground">
                   <Phone className="w-4 h-4" />
-                  <span>+91 9876543210</span>
+                  <span>+91 8888831115</span>
                 </div>
                 <div className="flex items-center space-x-2 text-sm text-muted-foreground">
                   <Mail className="w-4 h-4" />
-                  <span>info@smithtours.com</span>
+                  <span>smithtours.kop@gmail.com</span>
                 </div>
-                <Button variant="default" size="sm" className="mt-2">
+                <Button 
+                  variant="default" 
+                  size="sm" 
+                  className="mt-2"
+                  onClick={() => window.location.href = 'tel:+918888831115'}
+                >
                   Book Now
                 </Button>
               </div>
