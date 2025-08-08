@@ -17,7 +17,7 @@ import rankala from "@/assets/rankala/rankala.jpg"; // Replace with actual Ranka
 import rankala1 from "@/assets/rankala/rankala1.jpg"; // Replace with actual Rankala Lake image
 import malvan from "@/assets/malvan/malvan.jpg"; // Ensure this image exists
 
-import jyotibaTemple from "@/assets/jyotiba/jyotiba.jpg";
+import jyotibaTemple from "@/assets/jyotiba1/jyotiba.jpg";
 import kopeshwarTemple from "@/assets/kopeshwar/kopeshwar.jpg";
 import kopeshwarTemple1 from "@/assets/kopeshwar/kopeshwar1.jpg";
 import ganpatipule from "@/assets/ganpatipule/ganpatipule.jpg";
