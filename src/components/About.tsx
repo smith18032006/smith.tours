@@ -66,7 +66,7 @@ const About = () => {
               </h3>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p><h3>
-                  <b>Hi, I’m Ramesh – Welcome to My Journey </b>
+                  <b>Hi, I’m Rakesh – Welcome to My Journey </b>
 
 I started Smith Tours and Travels with one simple goal – to give people safe, reliable, and comfortable rides, just like I’d want for my own family. Every car you book with us is personally looked after by me and my team. Whether you’re heading out for work, a holiday, or a family function – I’m here to make sure your journey is smooth and stress-free.
 

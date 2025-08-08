@@ -37,8 +37,8 @@ const Contact = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-foreground mb-1">24x7 Phone Support</h4>
-                      <p className="text-muted-foreground">+91 9876543210</p>
-                      <p className="text-muted-foreground">+91 8765432109</p>
+                      <p className="text-muted-foreground">+91 8888831115</p>
+                      <p className="text-muted-foreground">+91 9011156088</p>
                       <p className="text-sm text-muted-foreground mt-1">Available round the clock for bookings and assistance</p>
                     </div>
                   </div>
@@ -51,7 +51,7 @@ const Contact = () => {
                     <div>
                       <h4 className="font-semibold text-foreground mb-1">Email Address</h4>
                       <p className="text-muted-foreground">smithtours.kop@gmail.com</p>
-                      <p className="text-muted-foreground">bookings@smithtours.com</p>
+                     
                       <p className="text-sm text-muted-foreground mt-1">Send us your queries and booking requests</p>
                     </div>
                   </div>
